@@ -1,0 +1,166 @@
+:root {
+    --bg-color: #fbfbfb;
+    --primary-color: #347dfe;
+    --text-color: #161616;
+}
+
+.container-fluid {
+    background-color: var(--bg-color);
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+button, input[type="button"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+input[type="email"] {
+    padding: .5rem;
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+}
+
+header {
+    padding: .5rem 2rem;
+}
+
+.hero {
+    background-image: rgb(0, 0, 0);
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url(resources/images/bg-masthead.jpg) no-repeat;
+    background-size: cover;
+    height: 80vh;
+    max-height: 600px;
+    padding: 1rem;
+}
+
+.vertical-align-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    margin: 5rem;
+}
+
+.intro i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.features {
+    background-color: #fefefe;
+}
+
+.bg {
+    height: 500px;
+    overflow: hidden;
+}
+
+.bg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0;
+}
+
+.description {
+    padding: 4rem;
+}
+
+.avatar {
+    width: 200px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 8px #888888;
+}
+
+.testimonials > div {
+    gap: 100px;
+}
+
+.sign-up {
+    background-image: rgb(0, 0, 0);
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url(resources/images/bg-masthead.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding: 100px 1rem;
+}
+
+ul {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+ul li:after { 
+    content: "\00b7";
+    margin: 1rem;
+}
+
+ul li:last-child:after { 
+    content: none; 
+}
+
+.links i {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+footer {
+    margin: 80px 0;
+}
+
+@media (min-width: 992px) {
+    input[type="email"] {
+        width: 400px;
+    }
+    input[type="submit"] {
+        padding: 2rem;
+    }
+    figure {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header, .intro {
+        padding: 1rem 100px;
+    }
+    .hero {
+        padding: 1rem 200px;
+    }
+    .bg {
+        height: 400px;
+        overflow: hidden;
+    }
+    .bg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0;
+    }
+    .description {
+        padding: 6rem;
+    }
+    footer {
+        padding: 0 200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    header, .intro {
+        padding: 1rem 200px;
+    }
+    .hero {
+        padding: 1rem 300px;
+    }
+}
